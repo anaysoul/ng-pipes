@@ -36,4 +36,22 @@
       </div>
     </div>
   </div>
+
+  <div class="row">
+    <div class="form-group col">
+      <label for="amount">Payment Amount </label>
+      <input
+        class="form-control"
+        type="number"
+        (input)="onAmountChange(amountChange.value)"
+        #amountChange
+      />
+    </div>
+    <div class="col">
+      <label for="amount"><b>Payment Amount</b></label>
+      <div>
+        {{ amount | currency: "JPY" }}
+      </div>
+    </div>
+  </div>
 </div>
