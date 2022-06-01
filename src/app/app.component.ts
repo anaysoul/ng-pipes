@@ -8,7 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   name: string = '';
   date: string = '';
-  amount: string = '';
+  amount: number = 0.0;
+  height: number = 0;
 
   onNameChange(value: string) {
     this.name = value;
@@ -18,7 +19,11 @@ export class AppComponent {
     this.date = value;
   }
 
-  onAmountChange(value: string) {
+  onAmountChange(value: number) {
     this.amount = value;
+  }
+
+  onHeightChange(value: number) {
+    this.height = value;
   }
 }
