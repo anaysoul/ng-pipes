@@ -18,4 +18,22 @@
       </div>
     </div>
   </div>
+
+  <div class="row">
+    <div class="form-group col">
+      <label for="date">Payment Date </label>
+      <input
+        class="form-control"
+        type="date"
+        (input)="onDateChange(dateChange.value)"
+        #dateChange
+      />
+    </div>
+    <div class="col">
+      <label for="date"><b>Payment Date</b></label>
+      <div>
+        {{ date | date: "fullDate" }}
+      </div>
+    </div>
+  </div>
 </div>
