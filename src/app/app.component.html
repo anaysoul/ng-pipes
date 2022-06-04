@@ -72,4 +72,22 @@
       </div>
     </div>
   </div>
+
+  <div class="row">
+    <div class="form-group col">
+      <label for="miles">Miles </label>
+      <input
+        class="form-control"
+        type="number"
+        (input)="onMilesChange(+milesChange.value)"
+        #milesChange
+      />
+    </div>
+    <div class="col">
+      <label for="kilometers"><b>Kilometers</b></label>
+      <div>
+        {{ miles | convert }}
+      </div>
+    </div>
+  </div>
 </div>
